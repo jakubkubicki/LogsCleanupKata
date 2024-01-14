@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <logs_cleanup_kata>
+            <general>
+                <is_enabled>1</is_enabled>
+                <cron_run_frequency>00 00 * * *</cron_run_frequency>
+            </general>
+            <files>
+                <is_enabled>1</is_enabled>
+            </files>
+            <folders>
+                <is_enabled>1</is_enabled>
+            </folders>
+            <database>
+                <is_enabled>1</is_enabled>
+            </database>
+        </logs_cleanup_kata>
+    </default>
+</config>

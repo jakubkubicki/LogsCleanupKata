@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="jakub_kubicki" translate="label" sortOrder="1000">
+            <label>Jakub Kubicki</label>
+        </tab>
+        <section id="logs_cleanup_kata" sortOrder="10" showInDefault="1" translate="label">
+            <label>Logs Cleanup Kata</label>
+            <tab>jakub_kubicki</tab>
+            <resource>JakubKubicki_LogsCleanupKata::config</resource>
+            <group id="general" sortOrder="10" showInDefault="1" translate="label">
+                <label>General</label>
+                <field id="is_enabled" type="select" sortOrder="10" showInDefault="1" translate="label" canRestore="1">
+                    <label>Is Enabled Logs Cleanup</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="cron_run_frequency" type="text" sortOrder="20" showInDefault="1" translate="label" canRestore="1">
+                    <label>Cron Run Frequency</label>
+                </field>
+            </group>
+            <group id="files" sortOrder="20" showInDefault="1" translate="label">
+                <label>Files</label>
+                <field id="is_enabled" type="select" sortOrder="10" showInDefault="1" translate="label" canRestore="1">
+                    <label>Is Enabled Files Logs Cleanup</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="folders" sortOrder="30" showInDefault="1" translate="label">
+                <label>Folders</label>
+                <field id="is_enabled" type="select" sortOrder="10" showInDefault="1" translate="label" canRestore="1">
+                    <label>Is Enabled Folders Logs Cleanup</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="database" sortOrder="40" showInDefault="1" translate="label">
+                <label>Database</label>
+                <field id="is_enabled" type="select" sortOrder="10" showInDefault="1" translate="label" canRestore="1">
+                    <label>Is Enabled Database Logs Cleanup</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
